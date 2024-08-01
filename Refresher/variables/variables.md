@@ -73,3 +73,142 @@ function exampleConst() {
 }
 exampleConst();
 ```
+
+# Different Types of Variables in JavaScript
+
+In JavaScript, variables can hold various types of data. Understanding these data types is crucial for writing effective and bug-free code. Below are the primary data types that a variable can take in JavaScript, along with examples.
+
+## Primitive Data Types
+
+Primitive data types are the basic types of data in JavaScript and include:
+
+### 1. **Number**
+
+- **Description**: Represents numeric values. JavaScript does not distinguish between integer and floating-point numbers.
+- **Example**:
+
+  ```javascript
+  let age = 30; // An integer
+  let temperature = 36.6; // A floating-point number
+  ```
+
+### 2. **String**
+
+- **Description**: Represents a sequence of characters used for textual data. Strings can be enclosed in single quotes, double quotes, or backticks (template literals). They are immutable, meaning that any modification results in a new string.
+
+- **Example**:
+
+  ```javascript
+  let singleQuoteString = "Hello"; // Using single quotes
+  let doubleQuoteString = "World"; // Using double quotes
+  let templateLiteralString = `Hello, World!`; // Using backticks (template literals)
+  ```
+
+  ### 3. **Array**
+
+- **Description**: Represents an ordered collection of elements. Arrays can hold multiple values of various types, including numbers, strings, objects, and more. Arrays are zero-indexed, meaning the first element is at index `0`. They are mutable, allowing modifications to their elements.
+
+- **Example**:
+
+  ```javascript
+  let numbers = [1, 2, 3, 4, 5]; // An array of numbers
+  let mixedArray = [1, "two", true, null]; // An array with mixed types
+  let nestedArray = [
+    [1, 2],
+    [3, 4],
+  ]; // An array containing other arrays
+  ```
+
+  ### 4. **Object**
+
+- **Description**: Represents a collection of key-value pairs where each key is a string (or symbol) and each value can be of any data type. Objects are used to store structured data and can contain properties and methods.
+
+- **Example**:
+
+  ```javascript
+  let person = {
+    name: "John", // A string value
+    age: 30, // A number value
+    isStudent: false, // A boolean value
+    address: {
+      // A nested object
+      street: "123 Main St",
+      city: "Anytown",
+    },
+    greet: function () {
+      // A method
+      return `Hello, my name is ${this.name}`;
+    },
+  };
+  ```
+
+### 5. **Function**
+
+- **Description**: Represents a block of code designed to perform a specific task. Functions can be declared using the `function` keyword or defined as expressions. They can accept parameters, perform operations, and return a value. Functions are also objects in JavaScript, allowing them to have properties and methods.
+
+- **Example**:
+
+  ```javascript
+  // Function Declaration
+  function greet(name) {
+    return `Hello, ${name}!`;
+  }
+
+  // Function Expression
+  const add = function (a, b) {
+    return a + b;
+  };
+
+  // Arrow Function
+  const multiply = (x, y) => x * y;
+  ```
+
+### 6. **Null**
+
+- **Description**: Represents an intentional absence of any object value. It is used to explicitly indicate that a variable is meant to be empty or have no value. Unlike `undefined`, which means a variable has been declared but not yet assigned a value, `null` is an assignment value that signifies a deliberate lack of value.
+
+- **Example**:
+
+  ```javascript
+  let user = null; // Variable explicitly set to null
+
+  // Example usage
+  if (user === null) {
+    console.log("No user data available.");
+  }
+  ```
+
+### 7. **Undefined**
+
+- **Description**: Represents a variable that has been declared but has not yet been assigned a value. It is the default value of variables that are declared but not initialized. `undefined` also indicates that a property or element does not exist in an object or array.
+
+- **Example**:
+
+  ```javascript
+  let value; // Variable declared but not initialized
+  console.log(value); // Outputs: undefined
+
+  // Example of undefined in an object
+  let person = {
+    name: "Alice",
+  };
+  console.log(person.age); // Outputs: undefined (property 'age' does not exist)
+  ```
+
+### 8. **Boolean**
+
+- **Description**: Represents a logical entity with two possible values: `true` and `false`. Booleans are often used in conditional statements and control flow to determine the flow of execution based on conditions.
+
+- **Example**:
+
+  ```javascript
+  let isTrue = true; // Boolean value true
+  let isFalse = false; // Boolean value false
+
+  // Example usage in a conditional statement
+  if (isTrue) {
+    console.log("The condition is true.");
+  } else {
+    console.log("The condition is false.");
+  }
+  ```
