@@ -1,0 +1,89 @@
+body {
+  background-color: #1e1e1e;
+  color: #ffffff;
+  font-family: Arial, sans-serif;
+  text-align: center;
+  direction: rtl;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  color: #ffa500;
+  margin-top: 20px;
+}
+
+.container {
+  margin-top: 50px;
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: #333333;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.score-board {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 20px;
+}
+
+.score-board div {
+  font-size: 1.5em;
+  background-color: #444444;
+  padding: 10px;
+  border-radius: 10px;
+  min-width: 100px;
+}
+
+.timer {
+  font-size: 1.5em;
+  margin-top: 20px;
+  background-color: #444444;
+  padding: 10px;
+  border-radius: 10px;
+  display: inline-block;
+}
+
+.choices button {
+  font-size: 2em;
+  margin: 5px;
+  cursor: pointer;
+  padding: 15px;
+  border: none;
+  border-radius: 10px;
+  background-color: #555555;
+  color: #ffffff;
+  transition: background-color 0.3s;
+}
+
+.choices button:hover {
+  background-color: #777777;
+}
+
+.result {
+  margin-top: 20px;
+}
+
+.emoji {
+  font-size: 3em;
+  margin: 10px;
+}
+
+#reset {
+  margin-top: 20px;
+  font-size: 1em;
+  padding: 10px 20px;
+  cursor: pointer;
+  border: none;
+  border-radius: 10px;
+  background-color: #ff4500;
+  color: #ffffff;
+  transition: background-color 0.3s;
+}
+
+#reset:hover {
+  background-color: #ff6347;
+}
